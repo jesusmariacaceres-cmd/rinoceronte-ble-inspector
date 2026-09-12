@@ -1,0 +1,34 @@
+{
+  "retrieved": "2026-09-12",
+  "repositories": [
+    {
+      "name": "vehicle-command",
+      "url": "https://github.com/teslamotors/vehicle-command.git",
+      "sha": "f97fa1e4bf617a364c72b85cb5d859528abeda67",
+      "commit_date": "2026-07-31T14:40:52-07:00"
+    },
+    {
+      "name": "tesla-protocol",
+      "url": "https://github.com/Teslemetry/tesla-protocol.git",
+      "sha": "a14a9a45e0285e31b7ea7fe91a68e4aa36c4536f",
+      "commit_date": "2026-09-02T21:17:34+10:00"
+    },
+    {
+      "name": "TeslaBLEKeyKit",
+      "url": "https://github.com/misakatao/TeslaBLEKeyKit.git",
+      "sha": "e186c5a2ade352b719cb53b92599619f2556b841",
+      "commit_date": "2026-05-25T16:04:00+08:00"
+    },
+    {
+      "name": "python-tesla-fleet-api",
+      "url": "https://github.com/Teslemetry/python-tesla-fleet-api.git",
+      "sha": "066a13e624b116869a3438374727e06e5084a12e",
+      "commit_date": "2026-09-05T21:20:02+10:00"
+    }
+  ],
+  "packages": {
+    "tesla-protocol": "2.0.0",
+    "protobuf": "7.36.1",
+    "grpcio-tools": "1.83.1"
+  }
+}

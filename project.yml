@@ -1,0 +1,35 @@
+name: RinoceronteInspector
+options:
+  deploymentTarget:
+    iOS: '16.0'
+packages:
+  TeslaBLEKeyKit:
+    path: Vendor/TeslaBLEKeyKit
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    PRODUCT_BUNDLE_IDENTIFIER: es.luzrobada.rinoceronte.inspector
+    MARKETING_VERSION: '0.1.0'
+    CURRENT_PROJECT_VERSION: '1'
+    TARGETED_DEVICE_FAMILY: '1'
+targets:
+  RinoceronteInspector:
+    type: application
+    platform: iOS
+    sources: [App]
+    dependencies:
+      - package: TeslaBLEKeyKit
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Rinoceronte Inspector
+        NSBluetoothAlwaysUsageDescription: Leer los datos de Rinoceronte por Bluetooth con una clave de monitor.
+        NSBluetoothPeripheralUsageDescription: Leer los datos de Rinoceronte por Bluetooth.
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIApplicationSupportsIndirectInputEvents: true
+schemes:
+  RinoceronteInspector:
+    build:
+      targets:
+        RinoceronteInspector: all
